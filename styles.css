@@ -1,0 +1,535 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+}
+
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  
+  
+  outline: none;
+  text-align: center;
+ 
+  
+}
+
+h1:hover{
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+#intro{
+ display: flex;
+ justify-content:space-around;
+ position: relative;
+ align-items: center;
+ padding-bottom: 22em;
+ padding-top: 5em;
+ 
+}
+#intro h1 {
+  margin-top: 8rem;
+  font-size: 4em;
+  font-family:'Courier New', Courier, monospace;
+  
+  margin-bottom: 0;
+}
+
+#intro p {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 490px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.img-container {
+  overflow: hidden;
+  width: 364px;
+  margin-top: 6rem;
+  height: 359px;
+  border-radius: 15%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-container:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-container img{
+    width: 364px;
+    height: 359px;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-bottom: 3px solid  rgb(6,9,24);
+}
+  
+
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1.5em;
+  }
+  
+  nav a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .fa {
+  padding: 3px 5px;
+    
+  border-radius: 40%;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    color: #007bb5;
+    
+   
+  }
+
+  .fa-github {
+    color: black;
+  }
+
+
+
+  .a-btn {
+    padding: 10px 55px;
+    border-radius: 3em;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid black;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .a-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .blob{
+    position: absolute;
+    z-index: -1;
+   
+    width: 750px;
+    height: 650px;
+    background-color: white;
+    margin-right: 600px;
+
+  }
+  .custom-shape-divider-bottom-1685577210 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1685577210 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 114px;
+}
+
+.custom-shape-divider-bottom-1685577210 .shape-fill {
+    fill: rgb(6,9,24);
+}
+
+#about{
+  
+  background-color: rgb(6,9,24);
+  
+  border-radius: 50px;
+  padding: 9em 0em ;
+  font-family:'Courier New', Courier, monospace;
+}
+#about h2 {
+  
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: antiquewhite;
+  outline: none;
+  text-align: center;
+  
+  
+}
+
+#about h2:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+.about-container{
+  display: flex;
+  margin: 5em 5em;
+  
+}
+
+
+.p-after{
+  width: 70%;
+  float: right;
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+  padding-left:  70px;
+  
+}
+
+.p-after img {
+  object-fit: contain;
+  border-radius: 20px;
+  
+  height: 90px;
+}
+
+
+.about-p{
+  width: 50%;
+  float: left;
+  line-height: 30px;
+  border-radius: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: antiquewhite;
+  padding: 0px 40px;
+  
+}
+
+.about-p::first-letter {
+  font-size: 2em;
+  
+}
+
+#projects {
+ 
+  height: 900px;
+  background-color: antiquewhite;
+  border-radius: 50px;
+  padding: 5em 0em;
+ 
+  
+  
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(6,9,24);
+  outline: none;
+  text-align: center;
+}
+
+#projects h2:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+#projects ul {
+  margin-top: 100px;
+  display: flex;
+  justify-content:space-around;
+  list-style: none;
+ 
+}
+
+#projects li {
+  color: antiquewhite;
+  padding: 20px 20px;
+ 
+  border-radius: 20px;
+  background-color: rgb(6,9,24);
+  transition: transform 0.2s ease-in-out;
+}
+
+#projects li:hover {
+  transform: translateY(-10px);
+  border: 4px solid orange;
+}
+#projects ul img {
+  width: 380px;
+  border-radius: 30px;
+  
+  
+}
+
+#projects ul p {
+  width: 390px;
+  font-weight: 100;
+  color: white;
+} 
+
+#projects li h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#contact {
+  height: 800px;
+  border: 2px solid  black ;
+  border-radius: 50px;
+  background-color: rgb(6,9,24);
+  
+}
+
+#contact h2 {
+  
+  padding-top: 30px;
+  
+  color: antiquewhite;
+  text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  
+  outline: none;
+  text-align: center;
+
+}
+
+#contact h2:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+form {
+  margin-top: 150px;
+}
+form div {
+  
+  margin-bottom: 10px;
+  margin-left: 30%;
+}
+
+label {
+  display: block;
+  color: antiquewhite;
+  font-size: 25px;
+  margin-top: 30px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 60%;
+  padding: 7px;
+  font-size: 16px;
+  
+}
+
+
+button {
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  color: rgb(6,9,24);
+  background-color: antiquewhite;
+}
+
+button:hover {
+  background-color:darkorange;
+  color: #333;
+}
+
+footer {
+  color: orange;
+  background-color: rgb(6,9,24);
+  text-align: center;
+}
+
+/* Styles for screens up to 767px (mobile devices) */
+
+@media only screen and (max-width: 767px) {
+  #intro {
+    flex-direction: column;
+    padding: 5em 0;
+  }
+
+  #intro h1 {
+    margin-top: 4rem;
+    font-size: 3em;
+  }
+
+  #intro p {
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .img-container {
+    margin-top: 3rem;
+    width: 250px;
+    height: 250px;
+  }
+
+  .blob{
+    position: absolute;
+    z-index: -1;
+   
+    width: 750px;
+    height: 950px;
+    background-color: white;
+    margin-right: 100px;
+
+  }
+
+  .img-container img {
+    border-radius: 10%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #about {
+    padding: 4em 0;
+  }
+
+  #about h2 {
+    font-size: 50px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    margin: 2em 0;
+  }
+
+  .p-after {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-p {
+    width: 100%;
+    padding: 0 1em;
+    text-align: center;
+  }
+
+  #projects {
+    padding: 4em 0;
+    height: 100em;
+  }
+
+  #projects h2 {
+    font-size: 50px;
+  }
+
+  #projects ul {
+    flex-direction: column;
+  }
+
+  #projects li {
+    margin-bottom: 2em;
+    text-align: center;
+    
+  }
+
+  #projects ul img {
+    width: 60%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  #projects ul p {
+    width: 80%;
+    margin: 1em auto;
+  }
+
+  #contact {
+    height: 900px;
+    padding: 4em 0;
+  }
+
+  #contact h2 {
+    font-size: 50px;
+  }
+
+  form div {
+    margin-left: 30%;
+  }
+
+  label {
+    margin-top: 1em;
+  }
+
+  
+}
